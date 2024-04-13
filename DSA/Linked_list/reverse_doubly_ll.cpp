@@ -35,7 +35,7 @@ Node *reverse_doubly_ll(Node *head)
       curr->next=temp;
       curr=curr->prev;
     }
-    //if(temp!=NULL)head=temp->prev;
+    if(temp!=NULL)head=temp->prev;
     return head;
 }
 

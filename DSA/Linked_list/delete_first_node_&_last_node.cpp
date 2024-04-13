@@ -46,6 +46,16 @@ Node *delete_at_last(Node *head)
   return head;
 }
 
+Void print(Node *head)
+{
+  while(head!=NULL)
+  {
+    cout<<head->next<<" ";
+
+    head=head->next;
+  }
+}
+
 int main()
 {
   Node *head=new Node(1);
@@ -54,6 +64,8 @@ int main()
   head->next->next->next=new Node(4);
 
   Node *final=delete_node_at_first(head);
+
+  print(head);
 
   return 0;
 }
