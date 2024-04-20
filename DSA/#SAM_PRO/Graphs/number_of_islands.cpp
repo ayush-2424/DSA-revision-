@@ -2,7 +2,7 @@
 using namespace std;
 
 
-// 8 based direction 
+// 8 based direction
 void bfs(int r,int c,vector<vector<int>> &vis,vector<vector<char>> &grid)
 {
   vis[row][col]=1;
@@ -16,7 +16,7 @@ void bfs(int r,int c,vector<vector<int>> &vis,vector<vector<char>> &grid)
     int row=q.front().first;
     int col=q.front().second;
 
-    for(iint i=-1;i<=1;i++)
+    for(int i=-1;i<=1;i++)
     {
       for(int j=-1;j<=1;j++)
       {
